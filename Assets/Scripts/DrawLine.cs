@@ -5,6 +5,7 @@ public class Draw : MonoBehaviour
 {
     // alter using event\action instead of public static!!!
     public static float currentBrushThickness = 0.08f;
+    public static string currentBrushcolorHexCode = "#000000";
     
     [SerializeField] Camera m_camera;
     [SerializeField] GameObject brush;
@@ -40,8 +41,20 @@ public class Draw : MonoBehaviour
     {   
         GameObject brushInstance = Instantiate(brush);
         currentLineRenderer = brushInstance.GetComponent <LineRenderer>();
+        
+        //Setting the brush color and thickness
         currentLineRenderer.SetWidth(currentBrushThickness, currentBrushThickness);
-
+        
+        if (ColorUtility.TryParseHtmlString(currentBrushcolorHexCode, out Color newColor))
+        {
+            currentLineRenderer.startColor = newColor;
+            currentLineRenderer.endColor = newColor;
+        }
+        else
+        {
+            Debug.LogError("Invalid hex color code");
+        }
+        
         Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
 
         currentLineRenderer.SetPosition(0, mousePos);

@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class ChangeBrushThickness : MonoBehaviour
+public class ChangeBrushParameters : MonoBehaviour
 {
     //[SerializeField] private GameObject brush;
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private float thickness;
+    [SerializeField] private string colorName;
+    [SerializeField] private string colorHexCode;
 
     public void OnAwake()
     {
@@ -13,5 +15,10 @@ public class ChangeBrushThickness : MonoBehaviour
     {
         Draw.currentBrushThickness = thickness;
         //Draw.currentLineRenderer.SetWidth(thickness, thickness);
+    }
+
+    public void ChangeColor()
+    {
+        Draw.currentBrushcolorHexCode = colorHexCode;
     }
 }
