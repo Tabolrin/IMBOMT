@@ -1,12 +1,17 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Draw : MonoBehaviour
 {
+    // alter using event\action instead of public static!!!
+    public static float currentBrushThickness = 0.08f;
+    
     [SerializeField] Camera m_camera;
     [SerializeField] GameObject brush;
+    
     //[SerializeField] private LineRenderer lineRenderer;
 
-    LineRenderer currentLineRenderer = null;
+    public static LineRenderer currentLineRenderer = null;
 
     Vector2 lastPos;
 
@@ -17,10 +22,9 @@ public class Draw : MonoBehaviour
 
     void Drawing()
     {
-        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began) //Start drawing
+        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) //Start drawing
         {
             CreateBrush();
-
         }
         else if (Input.touchCount == 1)
         {
@@ -29,7 +33,6 @@ public class Draw : MonoBehaviour
         else
         {
             currentLineRenderer = null;
-
         }
     }
 
@@ -37,6 +40,7 @@ public class Draw : MonoBehaviour
     {   
         GameObject brushInstance = Instantiate(brush);
         currentLineRenderer = brushInstance.GetComponent <LineRenderer>();
+        currentLineRenderer.SetWidth(currentBrushThickness, currentBrushThickness);
 
         Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
 
@@ -57,7 +61,6 @@ public class Draw : MonoBehaviour
 
     void AddAPoint(Vector2 pointPos)
     {
-        
         currentLineRenderer.positionCount++;
         int positionIndex = currentLineRenderer.positionCount - 1;
         currentLineRenderer.SetPosition(positionIndex, pointPos);

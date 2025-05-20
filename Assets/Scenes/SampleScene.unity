@@ -445,6 +445,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1369592924}
     - target: {fileID: 5204885461579670127, guid: 0a56e602de510674384dec74d798ed75, type: 3}
+      propertyPath: thickness
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204885461579670127, guid: 0a56e602de510674384dec74d798ed75, type: 3}
       propertyPath: lineRenderer
       value: 
       objectReference: {fileID: 1369592926}
@@ -549,6 +553,10 @@ PrefabInstance:
       propertyPath: brush
       value: 
       objectReference: {fileID: 1369592924}
+    - target: {fileID: 1120968613216263713, guid: b95ef208d7d84814b92807af43f709ab, type: 3}
+      propertyPath: thickness
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1120968613216263713, guid: b95ef208d7d84814b92807af43f709ab, type: 3}
       propertyPath: lineRenderer
       value: 
@@ -737,7 +745,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.15
+    widthMultiplier: 0.075
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -812,7 +820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1546966290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,6 +967,10 @@ PrefabInstance:
     - target: {fileID: 3822957874015699503, guid: 71bb004aad25d8542b0367501f6bd5d9, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822957874015699503, guid: 71bb004aad25d8542b0367501f6bd5d9, type: 3}
+      propertyPath: thickness
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 3822957874015699503, guid: 71bb004aad25d8542b0367501f6bd5d9, type: 3}
       propertyPath: lineRenderer

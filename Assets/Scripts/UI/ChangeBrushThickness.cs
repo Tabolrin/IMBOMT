@@ -11,6 +11,7 @@ public class ChangeBrushThickness : MonoBehaviour
     }
     public void ChangeThickness()
     {
-        lineRenderer.SetWidth(thickness, thickness);
+        Draw.currentBrushThickness = thickness;
+        //Draw.currentLineRenderer.SetWidth(thickness, thickness);
     }
 }
