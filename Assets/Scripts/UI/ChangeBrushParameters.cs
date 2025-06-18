@@ -1,24 +1,29 @@
+using DrawingSystem;
 using UnityEngine;
 
 public class ChangeBrushParameters : MonoBehaviour
 {
-    //[SerializeField] private GameObject brush;
-    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Draw drawScript; // Reference to Draw component
     [SerializeField] private float thickness;
-    [SerializeField] private string colorName;
     [SerializeField] private string colorHexCode;
 
-    public void OnAwake()
-    {
-    }
     public void ChangeThickness()
     {
-        Draw.currentBrushThickness = thickness;
-        //Draw.currentLineRenderer.SetWidth(thickness, thickness);
+        Debug.Log("Changing brush thickness to: " + thickness);
+        if (drawScript != null)
+        {
+            drawScript.brushThickness = thickness; // Update instance variable
+            drawScript.ConfigureLineRenderer(); // Reapply settings
+        }
     }
 
     public void ChangeColor()
     {
-        Draw.currentBrushcolorHexCode = colorHexCode;
+        Debug.Log("Changing brush color to: " + colorHexCode);
+        if (drawScript != null)
+        {
+            drawScript.brushColorHexCode = colorHexCode;
+            drawScript.ConfigureLineRenderer();
+        }
     }
 }

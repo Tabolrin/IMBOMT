@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Draw : MonoBehaviour
+public class OldDraw : MonoBehaviour
 {
     // alter using event\action instead of public static!!!
     public static float currentBrushThickness = 0.08f;
