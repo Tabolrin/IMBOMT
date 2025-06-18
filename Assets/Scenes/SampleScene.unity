@@ -119,6 +119,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &236622163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1665230508535071043, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_Name
+      value: TattooMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067928537570809308, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+--- !u!114 &236622164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6612610464394040191, guid: cd9b22d57a7b6ca4e9422def787e8424, type: 3}
+  m_PrefabInstance: {fileID: 236622163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d95d8ab8b20a2640809d5a91c1c166c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +648,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2425282770486256844, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.8842773
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776541758502314609, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3504969153476114184, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -650,6 +734,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3504969153476114184, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635882716025259479, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038590155146462126, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5197028248755035698, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722057727518156803, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649052380526311481, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734006813802373260, guid: f546e895a6c61ac448ca21f09d440b2c, type: 3}
@@ -1343,6 +1447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_camera: {fileID: 519420031}
   brush: {fileID: 1369592924}
+  tattooMachine: {fileID: 236622164}
 --- !u!4 &1808102081
 Transform:
   m_ObjectHideFlags: 0
@@ -1491,3 +1596,4 @@ SceneRoots:
   - {fileID: 1808102081}
   - {fileID: 1546966293}
   - {fileID: 1117394166}
+  - {fileID: 236622163}

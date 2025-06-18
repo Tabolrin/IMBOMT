@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 42b8786164a334e46adc5ec8e1867b83
+guid: 06ef6ae0e762ad44a9cd9b0c473ca24d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5740714640896097964
-    second: MENU_BUTTON_0
+      213: 6728982822819700149
+    second: slider_black_0
+  - first:
+      213: 1265385295229772221
+    second: slider_black_1
+  - first:
+      213: 8373561750624374530
+    second: slider_black_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -122,30 +128,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MENU_BUTTON_0
+      name: slider_black_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 178
-        height: 141
+        y: 158
+        width: 346
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caefe7fdc8d1baf40800000000000000
-      internalID: 5740714640896097964
+      spriteID: 5bd9fd5c936226d50800000000000000
+      internalID: 6728982822819700149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_black_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 346
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db16c22c83d8f8110800000000000000
+      internalID: 1265385295229772221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_black_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f83c21c0ed43470800000000000000
+      internalID: 8373561750624374530
       vertices: []
       indices: 
       edges: []
@@ -174,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MENU_BUTTON_0: 5740714640896097964
+      slider_black_0: 6728982822819700149
+      slider_black_1: 1265385295229772221
+      slider_black_2: 8373561750624374530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

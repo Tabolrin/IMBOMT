@@ -9,12 +9,14 @@ public class Draw : MonoBehaviour
     
     [SerializeField] Camera m_camera;
     [SerializeField] GameObject brush;
-    
+    [SerializeField] TattooMachine tattooMachine;
+
     //[SerializeField] private LineRenderer lineRenderer;
 
     public static LineRenderer currentLineRenderer = null;
 
     Vector2 lastPos;
+
 
     private void Update()
     {
@@ -93,6 +95,8 @@ public class Draw : MonoBehaviour
         {
             AddAPoint(mousePos);
             lastPos = mousePos;
+
+            tattooMachine.MoveTattooMachine(mousePos);
         }
 
         /*
