@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.IO;
 
 [System.Serializable]
 public struct ValidationResult
