@@ -240,6 +240,7 @@ namespace DrawingSystem
                 UpdateLineRenderer();
                 Debug.Log($"Started drawing (mouse) at: {worldPos}, Screen Pos: {mousePos}, Points: {linePoints.Count}");
             }
+
         }
 
         void HandleContinuousDrawing()
