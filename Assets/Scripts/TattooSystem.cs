@@ -249,7 +249,7 @@ namespace TattooSystem
             UpdateLineRenderer();
 
             if (tattooMachine != null)
-                tattooMachine.MoveTattooMachine(worldPos);
+                tattooMachine.MoveTattooMachine(worldPos);////////////////////////
 
             Debug.Log($"StartDrawing: New line at world pos: {worldPos}, points: {currentLinePoints.Count}");
         }
@@ -281,7 +281,7 @@ namespace TattooSystem
                 UpdateLineRenderer();
 
                 if (tattooMachine != null)
-                    tattooMachine.MoveTattooMachine(worldPos);
+                    tattooMachine.MoveTattooMachine(worldPos);//////////////////////////////
 
                 if (showRealTimeValidation && currentLinePoints.Count > 1)
                     ValidateDrawing();
@@ -305,6 +305,8 @@ namespace TattooSystem
 
             currentLine = null;
             currentLinePoints.Clear();
+
+            tattooMachine.HideTattooMachine(); ///////////////////
         }
 
         Vector3 ScreenToWorldPosition(Vector2 screenPos)
