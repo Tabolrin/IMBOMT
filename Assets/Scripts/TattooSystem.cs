@@ -496,6 +496,7 @@ namespace TattooSystem
         {
             brushColor = color;
             brushColorHexCode = "#" + ColorUtility.ToHtmlStringRGB(color);
+            
             if (currentLine != null)
             {
                 currentLine.startColor = brushColor;

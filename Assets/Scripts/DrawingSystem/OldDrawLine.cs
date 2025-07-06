@@ -45,7 +45,9 @@ public class OldDraw : MonoBehaviour
         currentLineRenderer = brushInstance.GetComponent <LineRenderer>();
         
         //Setting the brush color and thickness
-        currentLineRenderer.SetWidth(currentBrushThickness, currentBrushThickness);
+        //currentLineRenderer.SetWidth(currentBrushThickness, currentBrushThickness); -obselete?
+        currentLineRenderer.startWidth = currentBrushThickness;
+        currentLineRenderer.endWidth = currentBrushThickness;
         
         if (ColorUtility.TryParseHtmlString(currentBrushcolorHexCode, out Color newColor))
         {
