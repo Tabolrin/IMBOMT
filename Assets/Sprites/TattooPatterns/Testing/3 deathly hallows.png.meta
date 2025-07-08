@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      3 deathly hallows_0: -6470632927539312286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
