@@ -3480,7 +3480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -3547,7 +3547,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.93
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3560,7 +3560,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &1368590862
@@ -4549,16 +4549,14 @@ MonoBehaviour:
   referenceTattoo: {fileID: 2800000, guid: f2b69b12f103e2b4080939e8b0a79454, type: 3}
   validationCamera: {fileID: 1368590861}
   renderTextureSize: 512
-  shapeWeight: 0.8
-  colorWeight: 0.2
-  penaltyWeight: 0.5
-  useReducedQuality: 1
+  shapeWeight: 1
+  colorWeight: 0
+  useReducedQuality: 0
   mobileTextureSize: 256
-  saveDebugTextures: 0
-  showRealTimeValidation: 0
+  saveDebugTextures: 1
+  showRealTimeValidation: 1
   currentResult:
     shapeScore: 0
-    colorScore: 0
     finalScore: 0
     correctShapePixels: 0
     incorrectShapePixels: 0
