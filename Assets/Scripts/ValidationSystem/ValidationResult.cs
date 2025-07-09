@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 namespace TattooSystem
 {
@@ -66,4 +66,4 @@ namespace TattooSystem
         Good,
         Excellent
     }
-}
+}*/
