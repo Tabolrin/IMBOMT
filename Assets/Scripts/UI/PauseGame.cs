@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class PauseGame : MonoBehaviour
 {
-    public void Pause(bool pause)
+    bool isPaused = false;
+    
+    public void Pause()
     {
-        if (pause)
+        isPaused = !isPaused;
+        
+        if (isPaused)
             Time.timeScale = 0;
         else
             Time.timeScale = 1;

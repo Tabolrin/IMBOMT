@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Machine
   - LineRenderer
-  - 
-  - 
+  - ReferenceTattoo
+  - Background
   - 
   - 
   - 
@@ -43,6 +43,12 @@ TagManager:
     locked: 0
   - name: Machine
     uniqueID: 2023454513
+    locked: 0
+  - name: ReferenceTattoo
+    uniqueID: 1553334001
+    locked: 0
+  - name: Background
+    uniqueID: 4087296619
     locked: 0
   m_RenderingLayers:
   - Default
