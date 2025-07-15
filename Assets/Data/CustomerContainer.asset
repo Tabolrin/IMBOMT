@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9abe3d5dc6a7e44786817d574e8fffc, type: 3}
+  m_Name: CustomerContainer
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -1007645064270415302, guid: 6109c7609c2420244b14b81770fa0a3a, type: 3}
+  - {fileID: -8981728740171024323, guid: 7126e5c74a329484a8a9c2b6ed3fe805, type: 3}
+  - {fileID: -6797742792304831773, guid: fc0aa73d19189f843a35c1d78b6f7916, type: 3}
+  - {fileID: -2172842899389468712, guid: ea7608925f615e64896a9bc66c79f647, type: 3}
+  - {fileID: -4859628222019258038, guid: 23df55021b90463428fced4cabe49d9f, type: 3}
