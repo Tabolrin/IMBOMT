@@ -2,20 +2,20 @@ using UnityEngine;
 
 public class ToggleActiveObject : MonoBehaviour
 {
-    [SerializeField] private GameObject Object;
+    //[SerializeField] private GameObject Object;
 
-    public void ActivateObject()
+    public void ActivateObject(GameObject gObject)
     {
-        Object.SetActive(true);
+        gObject.SetActive(true);
     }
 
-    public void DisableObject()
+    public void DisableObject(GameObject gObject)
     {
-        Object.SetActive(false);
+        gObject.SetActive(false);
     }
 
-    public void ToggleObject()
+    public void ToggleObject(GameObject gObject)
     {
-        Object.SetActive(!Object.activeSelf);
+        gObject.SetActive(!gObject.activeSelf);
     }
 }
